@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Pension Form</title>
+
+        <style>
+            table{
+                background-color: lightblue;
+                border-radius: 5px;
+            }    
+            nav .icon{
+                display: inline-block;
+                display: block;
+    
+            } 
+            .para{
+                background-color: red;
+                padding: 10;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: 600;
+                background-position: 10px;
+            }        
+            .head{
+                text-align: center;
+                background-color: lightgray;
+                border-radius: 5px;
+                padding: 10px;
+            }        
+            .issue{
+                font-weight: 700;
+            }   
+            .select{
+                width: 20%;
+                height: 20px;
+                border-color:blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .type{
+                font-weight: 700; 
+            }
+            .family{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .pay{
+                font-weight: 700;
+            }
+            .scale{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .dept{
+                font-weight: 700;
+            }
+            .purpose{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text1{
+                font-weight: 700;
+            }
+            .option1{
+                width: 10%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .name{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .relation{
+                font-weight: 700;
+            }
+            .text2{
+                width: 10%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .option2{
+                width: 10%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .rname{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text3{
+                font-weight: 700;
+            }
+            .no{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .option3{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .ac{
+                font-weight: 700;
+            }
+            .acno{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text4{
+                font-weight: 700;
+            }
+            .option4{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text5{
+                font-weight: 700;
+            }
+            .date{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text6{
+                font-weight: 700;
+            }
+            .amount{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text7{
+               font-weight: 700;
+            }
+            .option5{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text8{
+                font-weight: 700;
+            }
+            .option6{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text9{
+               font-weight: 700;
+            }
+            .option7{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text10{
+               font-weight: 700;
+            }
+            .option8{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .office{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text11{
+                font-weight: 700;
+            }
+            .option9{
+                width: 10%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .mobile{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text12{
+                font-weight: 700;
+            }
+            .mail{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text13{
+                font-weight: 700;
+            }
+            .aadhaar{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .text14{
+                font-weight: 700;
+            }
+            .option10{
+                width: 20%;
+                height: 20px;
+                border-color: blueviolet;
+                border-radius: 10px;
+                border-style: double;
+            }
+            .submit{
+                width: 20%;
+                height: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 5px 5px 5px 5px;
+                background-color: grey;
+            }
+            .reset{
+                width: 20%;
+                height: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 5px 5px 5px 5px;
+                background-color: grey;
+            }
+            .submit:hover{
+                background-color: cornsilk;
+            }
+            .reset:hover{
+                background-color: cornsilk;
+            }
+        
+
+        </style>
+    </head>
+    <body>
+        <form method="post" enctype="multipart/form-data">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <h1>Revision of Pension/Family Pension</h1>
+                        <p>State Govt. & Aided Educational Institutions, Government of TamilNadu</p>
+                        <nav class="icon">
+                           <a href="" i class="fa-sharp fa-solid fa-house-chimney"></i></a>
+                        </nav>                              
+                        <br><br>
+                    </td>
+                </tr>
+            </table>   
+        
+            <div class="head">
+                <h2>FORM OF APPLICATION (ANNEXTURE-C)</h2>
+            </div>
+            <br> 
+            <marquee class="para">Please apply for Revision of Pension/Family Pension using Aadhaar e-KYC for faster processing. No need to visit your pension disbursing authority.
+                Track your applicatio statue online. Provide mobile number and e-mail id for getting notifications at each stage throught SMS and e-mail.</marquee>
+           
+            <br> 
+            <div>
+            <label class="issue">Select Your Pension Issuing Authority *  :</label>
+            <select class="select">
+                <option>---Select---</option>
+                <option>Accountant General</option>
+                <option>Controller of Accounts</option>
+            </select>
+            <br><br>
+            <label class="type">Type of Pension*    :</label>
+            <select class="family">
+                <option>---Select---</option>
+                <option>Superannuation Pension</option>
+                <option>Family Pension</option>
+                <option>Voluntary Pension</option>
+                <option>Disability Pension</option>
+            </select>
+            <br><br>
+            <label class="pay">Scale of Pay*    :</label>
+            <select class="scale">
+                <option>---Select---</option>
+                <option>UGC</option>
+                <option>non-UGC</option>
+            </select>
+            <br><br>
+            <label class="dept">Department*    :</label>
+            <select class="purpose">
+                <option>---Select---</option>
+                <option>Higher Education</option>
+                <option>Health and Family Welfare</option>
+                <option>Industries</option>
+                <option>Skill Development and Technical Education</option>
+                <option>Agricultural and Farmer's Empowerment </option>
+                <option>Other</option>
+            </select>
+            <br><br>
+            <label class="text1">Name of the family Pensioner*    :</label>
+            <select class="option1">
+                <option>---Select---</option>
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Miss.</option>
+            </select>
+            <input type="text" class="name">
+            <br><br>
+            <label class="relation">Name & Relationship with the Deceased Pensioner*   :</label> 
+            <select class="option2">
+                <option>----Relation-----</option>
+                <option>Father</option>
+                <option>Mother</option>
+                <option>Spouse</option>
+            </select>
+            <select class="text2">
+                <option>Mr.</option>
+                <option>Mrs.</option>
+            </select>
+            <input type="text" class="rname">
+            <br><br>
+            <label class="text3">PPO No.*     :</label>
+            <input type="text" class="no">
+            <input type="file"  class="option3" name="flupload" accept="jpg,png,JPG,PNG and pdf;File size max.5mb">
+            <br><br>
+            <label class="ac">Pension A/C No.*    :</label>
+            <input type="number" class="acno">
+            <br><br>
+            <label class="text4">Pension Disbursing Authority Type*       :</label>
+            <select class="option4">
+                <option>---Select---</option>
+                <option>District/Special Treasury</option>
+                <option>Sub-Treasury</option>
+                <option>Bank</option>
+            </select>
+            <br><br>
+            <label class="text5">Date of Commencement of Family Pension*        :</label>
+            <input type="date" class="date">
+            <br><br>
+            <label class="text6">Amount of Basic Family Pension after Death of Pensioner*     :</label>
+             <input type="number" class="amount">
+             <br><br>
+             <label class="text7">Receiving any other Pension *   <br>(Ex-serviceman,Railway etc)        :</label>
+             <select class="option5">
+                <option>---Select---</option>
+                <option>Yes</option>
+                <option>No</option>
+             </select>
+             <br><br>
+             <label class="text8">Additional Pension/Personal Pension drawn,if any     :</label>
+             <select class="option6">
+                <option>Nil</option>
+                <option>Additional Pension</option>
+                <option>Personal Pension</option>
+             </select>
+             <br><br>
+             <label class="text9">Length of service rendered by the pensioner      :</label>
+             <select class="option7">
+                <option>0 Years</option>
+                <option>1 Years</option>
+                <option>2 Years</option>
+                <option>3 Years</option>
+                <option>4 Years</option>
+                <option>5 Years</option>
+                <option>6 Years</option>
+                <option>7 Years</option>
+                <option>8 Years</option>
+                <option>9 Years</option>
+                <option>10 Years</option>
+                <option>11 Years</option>
+                <option>12 Years</option>
+                <option>13 Years</option>
+                <option>14 Years</option>
+                <option>15 Years</option>
+                <option>16 Years</option>
+                <option>17 Years</option>
+                <option>18 Years</option>
+                <option>19 Years</option>
+                <option>20 Years</option>
+                <option>21 Years</option>
+                <option>22 Years</option>
+                <option>23 Years</option>
+                <option>24 Years</option>
+                <option>25 Years</option>
+                <option>26 Years</option>
+                <option>27 Years</option>
+                <option>28 Years</option>
+                <option>29 Years</option>
+                <option>30 Years</option>
+                <option>31 Years</option>
+                <option>32 Years</option>
+                <option>33 Years</option>
+            </select>
+            <select class="option8">
+                <option>0 Month</option>
+                <option>1 Month</option>
+                <option>2 Month</option>
+                <option>3 Month</option>
+                <option>4 Month</option>
+                <option>5 Month</option>
+                <option>6 Month</option>
+                <option>7 Month</option>
+                <option>8 Month</option>
+                <option>9 Month</option>
+                <option>10 Month</option>
+                <option>11 Month</option>
+            </select>
+            <br><br>
+            <label class="text10">Present Pension sanction Authority/Office         :</label>
+            <input type="text" class="office">
+            <br><br>
+            <label class="text11">Mobile No.*          :</label>
+            <select class="option9"><option>+91</option></select>
+            <input type="number" class="mobile">
+            <br><br>
+            <label class="text12">Email-Id*         :</label>
+            <input type="email" class="mail">
+            <br><br>
+            <label class="text13">Aadhaar No.*       :</label>
+            <input type="number" class="aadhaar">
+            <br><br>
+            <label class="text14">Present Address.*      :</label>
+            <textarea class="option10">  </textarea>
+            </div>
+            <br><br><br>
+            <div align="center" style="background-color: lightgrey; border-radius: 5px;">
+                <button type="submit" class="submit" >Submit</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>
